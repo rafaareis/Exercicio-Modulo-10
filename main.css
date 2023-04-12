@@ -1,0 +1,26 @@
+
+.container-flex {
+    display: flex;
+}
+
+
+.lista-discos {
+    flex-wrap: wrap;
+}
+
+.lista-discos li {
+    list-style: none;
+
+}
+
+.lista-discos li:hover {
+    border: 5px solid black;
+}
+
+.lista-discos li img {
+    max-height: 160px;
+    max-width: 160px;
+    width: 100%;
+    height: 100%;
+    margin-right: 24px;
+}
