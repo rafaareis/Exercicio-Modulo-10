@@ -5,19 +5,72 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="main.css">
+    <!-- Slick: Tag Head Importar CSS-->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <!-- Google Fonts: DynaPuff -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=DynaPuff&display=swap" rel="stylesheet">
+
     <title>Document</title>
 </head>
 <body>
-    <section>
+    <header>
+        <div class="container header container-flex">
+            <h1>Mus<span>!</span>c Store</h1>
+            <div class="menu-hamburger">
+                <span></span>
+                <span></span>
+                <span></span>    
+            </div>
+        </div>
+        <nav>
+            <div class="container nav">
+                <ul>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div  class="container" id="carousel-imagens">
+    </div>
+    <section id="sobre-a-loja">
+        <div class="container">
+            <h2>Sobre a Mus!c Store</h2>
+            <div class="container paragraph">
+                <p>A <strong>Mus!c Store</strong> é uma loja virtual que oferece uma grande variedade de CDs e outros produtos relacionados à música.</p> 
+                <p>A loja oferece preços competitivos e frete grátis <strong>para todo o Brasil</strong> em compras acima de <strong>R$ 99,00</strong>.</p>
+            </div>
+        </div>
+    </section>
+    <section id="lancamentos">
         <div class="container">
             <h2>Lançamentos</h2>
-            <ul class="container-flex lista-discos">
+            <ul class="container-flex lista-discos-lanc">
 
             </ul>
         </div>
     </section>
+    <section id="promocoes">
+        <div class="container">
+            <h2>Promoções</h2>
+            <ul id="promo-carousel" class="container-flex lista-discos-promo">
+
+            </ul>
+        </div>
+    </section>
+    <!-- Importar Jquery -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <!-- Importar Slick(JS) -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script src="./menu.js"></script>
+    <script src="./lancamentos.js"></script>
+    <script src="./promocoes.js"></script>
+    <script src="./carousel.js"></script>
     <script src="./main.js"></script>
-    <script src="./itens.js"></script>
    
 </body>
 </html>

@@ -1,26 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DynaPuff', cursive;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header {
+    height: 150px;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 2px;
+}
+
+.header h1 {
+    text-transform: uppercase;
+}
+
+.header h1 span {
+    color: #8854d0;
+}
+
+nav {
+    padding: 16px 0;
+    margin-bottom: 24px;
+}
+
+nav li {
+    list-style: none;
+    display: inline;
+    margin-right: 14%;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    
+    
+}
+
+nav li a {
+    color: #000;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    color: #8854d0;
+}
+
+.menu-hamburger {
+    width: 32px;
+    cursor: pointer;
+}
+
+.menu-hamburger:hover {
+    background-color: #8854d0;
+    border: 3px solid black;
+}
+
+.menu-hamburger span {
+    height: 2px;
+    width: 100%;
+    background-color: #000;
+    display: block;
+    margin-bottom: 4px;
+}
 
 .container-flex {
     display: flex;
 }
 
 
-.lista-discos {
+.lista-discos-lanc,
+.lista-discos-promo {
     flex-wrap: wrap;
 }
 
-.lista-discos li {
+.lista-discos-lanc li,
+.lista-discos-promo li {
     list-style: none;
-
+    max-width: 200px;
+    height: 340px;
+    width: 100%;
+    margin-bottom: 24px;
+    margin-right: 2px;
+    display: block;
+    align-items: center;
+    text-align: center;
+    
 }
 
-.lista-discos li:hover {
-    border: 5px solid black;
+.lista-discos-lanc li:hover,
+.lista-discos-promo li:hover {
+    background-color: #d1d8e0;
 }
 
-.lista-discos li img {
-    max-height: 160px;
-    max-width: 160px;
+
+.lista-discos-lanc li h3,
+.lista-discos-promo li h3{
+    max-height: 60px;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    color: #8854d0;
+}
+
+.lista-discos-lanc li h4,
+.lista-discos-promo li h4 {
+    max-height: 60px;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lista-discos-lanc li img,
+.lista-discos-promo li img {
+    max-height: 125px;
+    max-width: 125px;
     width: 100%;
     height: 100%;
-    margin-right: 24px;
+    margin: 0 auto;
 }
+
+.lista-discos-lanc li .price,
+.lista-discos-promo li .price {
+    max-height: 60px;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lista-discos-lanc li .price strong,
+.lista-discos-promo li .price strong {
+    font-size: 30px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    background-color: #8854d0;
+    color: #fff;
+    font-size: 18px;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 6px;
+
+}
+
+button:hover{
+    background-color: #119759;
+    text-transform: uppercase;
+}
+
+#carousel-imagens{
+    max-width: 1024px;
+}
+
+#promo-carousel {
+    max-width: 1000px;
+}
+
+#carousel-imagens img {
+    max-width: 256px;
+    max-height: 256px;
+    width: 100%;
+    height: 100%;
+}
+
+#sobre-a-loja {
+   max-width: 512px;
+   margin-right: 24px;
+   margin: 0 auto;
+}
+
+#sobre-a-loja h2,
+#lancamentos h2,
+#promocoes h2 {
+    margin: 30px;
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #8854d0;
+}
+
+.paragraph {
+    margin-bottom: 30px;
+    font-size: 25px;
+}
+
+.paragraph p,
+.paragraph p strong {
+    font-family: 'Dosis', sans-serif;
+}
+

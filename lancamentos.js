@@ -1,4 +1,4 @@
-const discosObj = [
+const lancObj = [
     {
         id: 1,
         artista: 'Larkin Poe',
@@ -23,20 +23,41 @@ const discosObj = [
         nomeDoDisco: 'Eternal Blue',
         anoLancamento: '2021',
         capaDoDisco: './capas de cds/spiritbox-eternal-blue.jpeg',
-        price: "R$ 133,37"
+        price: "R$ 133.37"
     },
+
+    {
+        id: 4,
+        artista: 'Joe Bonamassa',
+        nomeDoDisco: 'Time Clocks',
+        anoLancamento: '2021',
+        capaDoDisco: './capas de cds/joe_bonamassa_time_clocks.jpg',
+        price: "R$ 62.12"
+    },
+
+    {
+        id: 5,
+        artista: 'Five Finger Death Punch',
+        nomeDoDisco: 'Afterlife',
+        anoLancamento: '2022',
+        capaDoDisco: './capas de cds/ffdp_after.jpg',
+        price: "R$ 78.90"
+    },
+
+
+
 
 ];
 
 
-let discos = discosObj.map(function(disco) {
+let discoslanc = lancObj.map(function(disco) {
     return `
             <li>
             <img src="${disco.capaDoDisco}" alt="Capa do Disco: ${disco.artista} - ${disco.nomeDoDisco}" />
             <h3>${disco.artista}</h3>
-            <h4>${disco.nomeDoDisco}</h4>
+            <h4>${disco.nomeDoDisco}(${disco.anoLancamento})</h4>
 
-            <div className="price">
+            <div class="price">
                 <strong>${disco.price}</strong>
             </div>
             <button type="button">Tenho interesse</button>
@@ -45,4 +66,4 @@ let discos = discosObj.map(function(disco) {
             ;
 });
 
-document.querySelector('ul').innerHTML = discos.join("");
+document.querySelector('.lista-discos-lanc').innerHTML = discoslanc.join("");
