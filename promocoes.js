@@ -91,11 +91,11 @@ let discosPromo = promoObj.map(function(disco) {
     return `
             <li>
             <img src="${disco.capaDoDisco}" alt="Capa do Disco: ${disco.artista} - ${disco.nomeDoDisco}" />
-            <h3>${disco.artista}</h3>
-            <h4>${disco.nomeDoDisco}(${disco.anoLancamento})</h4>
+            <h3>${disco.nomeDoDisco}(${disco.anoLancamento})</h3>
+            <h4>${disco.artista}</h4>
 
             <div class="price">
-                <div className="promocoes">
+                <div class="promoções">
                     <del>${disco.originalPrice}</del>
                     <p>${disco.percent}%OFF</p>
                 </div>

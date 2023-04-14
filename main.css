@@ -5,20 +5,47 @@
     font-family: 'DynaPuff', cursive;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 .container {
     max-width: 1024px;
     width: 100%;
     margin: 0 auto;
 }
 
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+header,
+footer {
+    padding-top: 16px;
+    background-color: #a5b1c2;
+    margin: 0 auto;
+}
+
+
+.address-social-media {
+    width: 1024px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
 .header {
-    height: 150px;
+    height: 50px;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 2px;
 }
 
 .header h1 {
+    font-size: 50px;
     text-transform: uppercase;
 }
 
@@ -29,6 +56,7 @@
 nav {
     padding: 16px 0;
     margin-bottom: 24px;
+    display: none;
 }
 
 nav li {
@@ -142,6 +170,10 @@ nav li a:hover {
     font-size: 30px;
 }
 
+.promoções p {
+    color: #119759;
+}
+
 button {
     display: block;
     width: 100%;
@@ -156,6 +188,17 @@ button {
 
 }
 
+.slick-prev.slick-arrow,
+.slick-next.slick-arrow {
+    background: #8854d0;
+}
+
+.slick-prev.slick-arrow:hover,
+.slick-next.slick-arrow:hover {
+    background: #000;
+}
+
+
 button:hover{
     background-color: #119759;
     text-transform: uppercase;
@@ -165,7 +208,8 @@ button:hover{
     max-width: 1024px;
 }
 
-#promo-carousel {
+#promo-carousel,
+#lanc-carousel {
     max-width: 1000px;
 }
 
@@ -176,21 +220,22 @@ button:hover{
     height: 100%;
 }
 
-#sobre-a-loja {
+#sobre {
    max-width: 512px;
    margin-right: 24px;
    margin: 0 auto;
 }
 
-#sobre-a-loja h2,
-#lancamentos h2,
-#promocoes h2 {
+#sobre h2,
+#lançamentos h2,
+#promoções h2 {
     margin: 30px;
     text-align: center;
     font-size: 30px;
     text-transform: uppercase;
     color: #8854d0;
 }
+
 
 .paragraph {
     margin-bottom: 30px;
@@ -202,3 +247,40 @@ button:hover{
     font-family: 'Dosis', sans-serif;
 }
 
+
+.social-media-icons {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+}
+
+.social-media-icons li  {
+    list-style: none;
+
+}
+
+.social-media-icons li a img {
+    max-width: 30px;
+    width: 100%;
+}
+
+.address-footer a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.address-footer a img {
+    max-width: 30px;
+    max-height: 30px;
+    width: 100%;
+    padding-right: 5px;
+    
+}
+
+.address-footer a address {
+    font-size: 15px;
+    
+}

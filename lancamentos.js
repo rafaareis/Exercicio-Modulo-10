@@ -44,6 +44,15 @@ const lancObj = [
         price: "R$ 78.90"
     },
 
+    {
+        id: 6,
+        artista: 'The Warning',
+        nomeDoDisco: 'Error',
+        anoLancamento: '2022',
+        capaDoDisco: './capas de cds/TheWarning_Error.jpeg',
+        price: "R$ 100.00"
+    },
+
 
 
 
@@ -54,8 +63,9 @@ let discoslanc = lancObj.map(function(disco) {
     return `
             <li>
             <img src="${disco.capaDoDisco}" alt="Capa do Disco: ${disco.artista} - ${disco.nomeDoDisco}" />
-            <h3>${disco.artista}</h3>
-            <h4>${disco.nomeDoDisco}(${disco.anoLancamento})</h4>
+            
+            <h3>${disco.nomeDoDisco}(${disco.anoLancamento})</h3>
+            <h4>${disco.artista}</h4>
 
             <div class="price">
                 <strong>${disco.price}</strong>

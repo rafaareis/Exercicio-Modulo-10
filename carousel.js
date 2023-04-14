@@ -59,6 +59,11 @@ const carouselObJ = [
         src: './capas de cds/tame_impala_lonerism.jpg',
         alt: 'Tame Impala - Lonerism'
     },
+
+    {
+        src: './capas de cds/TheWarning_Error.jpeg',
+        alt: 'The Warning - Error'
+    },
 ];
 
 console.log(carouselObJ.length)

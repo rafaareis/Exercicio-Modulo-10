@@ -1,9 +1,9 @@
-const menuArr = ['Sobre', 'Lançamentos', 'Promoçoes', 'Contato']
+const menuArr = ['sobre', 'lançamentos', 'promoções', 'contato']
 
 let menu = menuArr.map(function(item) {
     return  `
             <li>
-                <a href="${item}">${item}</a>
+                <a href="#${item}">${item}</a>
             </li>
             `;
 });
