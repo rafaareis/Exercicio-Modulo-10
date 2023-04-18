@@ -1,3 +1,19 @@
+:root {
+    --cor1: #a5b1c2;
+    --cor2: #8854d0;
+    --cor3: #000;
+    --cor4: #d1d8e0;
+    --cor5: #119759;
+    --cor6: #fff;
+    --instagram1: #7f37c9;
+    --instagram2: #ff2992;
+    --instagram3: #ff9807;
+    --facebook: #4267b3;
+    --whatsapp: #25d366;
+    --youtube: #c4302b;
+
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -22,21 +38,23 @@ header {
     z-index: 1;
 }
 
-header,
-footer {
+header {
     padding-top: 16px;
-    background-color: #a5b1c2;
+    background-color: var(--cor1);
     margin: 0 auto;
 }
 
-
-.address-social-media {
-    width: 1024px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0 auto;
+main {
+    height: 200vh;
 }
+
+footer {
+    background-color: var(--cor1);
+    margin: 0 auto;
+    max-height: 250px;
+    height: 100%;
+}
+
 
 .header {
     height: 50px;
@@ -49,8 +67,14 @@ footer {
     text-transform: uppercase;
 }
 
-.header h1 span {
-    color: #8854d0;
+#footer-logo-contacts h2 {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.header h1 span,
+#footer-logo-contacts h2 span {
+    color: var(--cor2);
 }
 
 nav {
@@ -61,7 +85,8 @@ nav {
 
 nav li {
     list-style: none;
-    display: inline;
+    display: inline-flex;
+    justify-content: center;
     margin-right: 14%;
     font-size: 18px;
     font-weight: bold;
@@ -71,12 +96,12 @@ nav li {
 }
 
 nav li a {
-    color: #000;
+    color: var(--cor3);
     text-decoration: none;
 }
 
 nav li a:hover {
-    color: #8854d0;
+    color: var(--cor2);
 }
 
 .menu-hamburger {
@@ -85,14 +110,14 @@ nav li a:hover {
 }
 
 .menu-hamburger:hover {
-    background-color: #8854d0;
+    background-color: var(--cor2);
     border: 3px solid black;
 }
 
 .menu-hamburger span {
     height: 2px;
     width: 100%;
-    background-color: #000;
+    background-color: var(--cor3);
     display: block;
     margin-bottom: 4px;
 }
@@ -123,7 +148,7 @@ nav li a:hover {
 
 .lista-discos-lanc li:hover,
 .lista-discos-promo li:hover {
-    background-color: #d1d8e0;
+    background-color: var(--cor4);
 }
 
 
@@ -135,7 +160,7 @@ nav li a:hover {
     align-items: center;
     justify-content: center;
     text-transform: uppercase;
-    color: #8854d0;
+    color: var(--cor2);
 }
 
 .lista-discos-lanc li h4,
@@ -171,7 +196,7 @@ nav li a:hover {
 }
 
 .promoções p {
-    color: #119759;
+    color: var(--cor5);
 }
 
 button {
@@ -179,8 +204,8 @@ button {
     width: 100%;
     padding: 8px 0;
     border: none;
-    background-color: #8854d0;
-    color: #fff;
+    background-color: var(--cor2);
+    color: var(--cor6);
     font-size: 18px;
     font-style: italic;
     cursor: pointer;
@@ -190,17 +215,17 @@ button {
 
 .slick-prev.slick-arrow,
 .slick-next.slick-arrow {
-    background: #8854d0;
+    background: var(--cor2)
 }
 
 .slick-prev.slick-arrow:hover,
 .slick-next.slick-arrow:hover {
-    background: #000;
+    background: var(--cor3)
 }
 
 
 button:hover{
-    background-color: #119759;
+    background-color: var(--cor5);
     text-transform: uppercase;
 }
 
@@ -233,7 +258,7 @@ button:hover{
     text-align: center;
     font-size: 30px;
     text-transform: uppercase;
-    color: #8854d0;
+    color: var(--cor2)
 }
 
 
@@ -247,40 +272,157 @@ button:hover{
     font-family: 'Dosis', sans-serif;
 }
 
-
-.social-media-icons {
-    display: flex;
-    align-items: center;
-    justify-content: end;
+#footer-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
 
 }
 
-.social-media-icons li  {
+#footer-logo-contacts h2,
+#footer-menu h3,
+#footer-address h3  {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+#footer-menu h3,
+#footer-address h3 {
+    color: var(--cor2);
+}
+
+#footer-social-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.max-height {
+    height: 130px;
+    display: flex;
+    align-items: center;
+}
+
+#footer-social-media li {
+    list-style: none;
+    display: inline-flex;
+
+}
+
+#footer-social-media li a,
+.icon-address li i {
+    text-decoration: none;
+    color: var(--cor6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    
+}
+
+#footer-social-media li a:hover {
+    opacity: 0.3;
+}
+
+#Instagram {
+    background: linear-gradient(var(--instagram1), var(--instagram2), var(--instagram3) );
+}
+
+#Facebook {
+    background-color: var(--facebook);
+}
+
+#WhatsApp {
+    background-color: var(--whatsapp);
+}
+
+#footer-social-media li #Youtube {
+    color: var(--youtube);
+}
+
+.icon-address li i {
+    color: var(--cor3);
+    background-color: var(--cor6);
+}
+
+.icon-address li i:hover {
+    color: var(--cor2);
+}
+
+#Youtube{
+    background-color: var(--cor6);
+}
+
+#footer-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#footer-address {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#footer-address a {
+    color: var(--cor3);
+}
+
+#menu {
+    display: flex;
+    flex-direction: column;
+    gap: 7.5px;
+}
+
+#address {
+    display: flex;
+    flex-direction: column;
+    gap: 7.5px; 
+}
+
+.address-ul {
+    list-style: none;
+}
+
+.address-ul:hover {
+    color: var(--cor2);
+}
+
+.icon-address li {
+    display: inline-flex;
+}
+
+#menu li {
+    text-transform: capitalize;
     list-style: none;
 
 }
 
-.social-media-icons li a img {
-    max-width: 30px;
-    width: 100%;
-}
-
-.address-footer a {
+#menu li a {
     text-decoration: none;
+    color: var(--cor3); 
+}
+
+#menu li a:hover {
+    color: var(--cor2);
+}
+
+#address address {
+    list-style: none;
+    text-transform: capitalize;
+}
+
+#Google-Maps {
+    text-decoration: none;
+}
+
+#footer-copyright {
     display: flex;
-    align-items: center;
-    justify-content: start;
-}
-
-.address-footer a img {
-    max-width: 30px;
-    max-height: 30px;
-    width: 100%;
-    padding-right: 5px;
-    
-}
-
-.address-footer a address {
-    font-size: 15px;
-    
+    justify-content: center;
+    padding: 10px;
 }

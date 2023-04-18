@@ -9,3 +9,5 @@ let menu = menuArr.map(function(item) {
 });
 
 document.querySelector('.nav').innerHTML = menu.join("");
+
+document.querySelector('#menu').innerHTML = menu.join("");
