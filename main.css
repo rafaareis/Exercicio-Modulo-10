@@ -45,7 +45,8 @@ header {
 }
 
 main {
-    height: 200vh;
+    max-height: 1000vh;
+    height: 95%;
 }
 
 footer {
@@ -253,7 +254,8 @@ button:hover{
 
 #sobre h2,
 #lançamentos h2,
-#promoções h2 {
+#promoções h2,
+#contato h2 {
     margin: 30px;
     text-align: center;
     font-size: 30px;
@@ -425,4 +427,24 @@ button:hover{
     display: flex;
     justify-content: center;
     padding: 10px;
+}
+
+form {
+    max-width: 360px;
+    margin-bottom: 15px;
+}
+
+.form-campo {
+    margin-bottom: 5px;
+}
+
+.form-campo label {
+    font-weight: bold;
+    display: block;
+}
+
+.form-campo input {
+    width: 100%;
+    display: block;
+    padding: 8px;
 }
