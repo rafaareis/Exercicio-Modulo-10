@@ -118,6 +118,10 @@ nav li a:hover {
     display: none;
 }
 
+.menu-closed:hover {
+    color: var(--cor2);
+}
+
 .menu-hamburger:hover {
     background-color: var(--cor2);
     border: 3px solid black;
