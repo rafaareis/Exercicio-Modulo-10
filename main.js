@@ -1,7 +1,31 @@
 $(document).ready(function() {
 
-    $('.menu-hamburger').click(function () {
+    $('.menu').click(function () {
         $('nav').slideToggle();
+    })
+
+    $('.menu').on('click', '#menu-situation',function(e) {
+        console.log('cliquei');
+        if($(this).hasClass('off')){
+            $(this).removeClass('off');
+            $(this).addClass('on');
+            $('.menu-hamburger').css({display: "none"});
+            $('.menu-closed').css({display: "block"});
+        } else {
+            $(this).removeClass('on');
+            $(this).addClass('off');
+            $('.menu-hamburger').css({display: "block"});
+            $('.menu-closed').css({display: "none"});
+
+        }
+    })
+
+    $('.off').click(function() {
+
+    })
+
+    $('.on').click(function() {
+
     })
 
     $('#carousel-imagens').slick({

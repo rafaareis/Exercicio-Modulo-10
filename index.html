@@ -18,12 +18,19 @@
 </head>
 <body>
     <header>
-        <div class="container header container-flex">
+        <div class="container header container-flex ">
             <h1>Mus<span>!</span>c Store</h1>
-            <div class="menu-hamburger">
-                <span></span>
-                <span></span>
-                <span></span>    
+            <div class="menu">
+                <div id="menu-situation" class="off">
+                    <div class="menu-hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>    
+                    </div>
+                    <div class="menu-closed">
+                        <span>x</span>
+                    </div>
+                </div>
             </div>
         </div>
         <nav>
@@ -49,7 +56,7 @@
         <section id="lançamentos">
             <div class="container">
                 <h2>Lançamentos</h2>
-                <ul  id="lanc-carousel" class="container-flex lista-discos-lanc">
+                <ul  id="lanc-carousel" class="container-flex lista-discos-lanc discos">
     
                 </ul>
             </div>
@@ -57,7 +64,7 @@
         <section id="promoções">
             <div class="container">
                 <h2>Promoções</h2>
-                <ul id="promo-carousel" class="container-flex lista-discos-promo">
+                <ul id="promo-carousel" class="container-flex lista-discos-promo discos">
                     
                 </ul>
             </div>
@@ -65,33 +72,50 @@
         <section id="contato">
             <div class="container">
                 <h2>Contato</h2>
+                <div class="container" id="class-message">
+                    <p>Os seus dados de contato e disco de interesse foram enviados</p>
+                </div>
                 <form>
-                    <div class="form-campo">
-                        <label for="nome">Nome Completo:</label>
-                        <input type="text" id="nome" name="nome" />
-                    </div>
-                    <div class="form-campo">
-                        <label for="email">E-mail:</label>
-                        <input type="email" id="email" name="email" />
-                    </div>
-                    <div class="form-campo">
-                        <label for="celular">Celular:</label>
-                        <input type="tel" id="celular" name="celular" />
-                    </div>
-                    <div class="form-campo">
-                        <label for="cpf">CPF:</label>
-                        <input type="number" id="cpf" name="cpf" />
-                    </div>
-                    <div class="form-campo">
-                        <label for="endereco">Endereço:</label>
-                        <input type="text" id="endereco" name="endereco" />
-                    </div>
-                    <div class="form-campo">
-                        <label for="cep">CEP:</label>
-                        <input type="number" id="cep" name="cep" />
-                    </div>
-                    <button type="submit">Enviar</button>
+                    <div class="input-interesse">
+                        <div class="inputs">
+                            <div class="form-campo">
+                                <label for="nome">Nome Completo:</label>
+                                <input type="text" id="nome" name="nome" class="red" />
+                            </div>
+                            <div class="form-campo">
+                                <label for="email">E-mail:</label>
+                                <input type="email" id="email" name="email" class="red" />
+                            </div>
+                            <div class="form-campo">
+                                <label for="celular">Celular:</label>
+                                <input type="tel" id="celular" name="celular" class="red" />
+                            </div>
+                            <div class="form-campo">
+                                <label for="cpf">CPF:</label>
+                                <input type="tel" id="cpf" name="cpf" class="red" />
+                            </div>
+                            <div class="form-campo">
+                                <label for="endereco">Endereço:</label>
+                                <input type="text" id="endereco" name="endereco" class="red" />
+                            </div>
+                            <div class="form-campo">
+                                <label for="cep">CEP:</label>
+                                <input type="tel" id="cep" name="cep" class="red" />
+                            </div>
+                            <div class="form-campo">
+                                <label for="disco">Disco de interesse:</label>
+                                <input type="text" id="disco" name="disco" class="red" />
+                            </div>
+                        </div>
+                        <div class="interesse">
+                            <div id="disco-de-interesse">
+
+                            </div>
+                        </div>
+                        <button type="submit">Enviar</button>
+                    </div>  
                 </form>
+
             </div>
         </section>    
     </main>
@@ -124,13 +148,19 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <!-- Importar Slick(JS) -->
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
+    <!-- Importar Máscara -->
+    <script src="js/jquery.mask.min.js"></script>
+    <!-- Importar Validador -->
+    <script src="js/jquery.validate.min.js"></script>
+    <!-- Traduzir Validador -->
+    <script src="js/messages_pt_BR.min.js"></script>
     <script src="./menu.js"></script>
     <script src="./lancamentos.js"></script>
     <script src="./promocoes.js"></script>
     <script src="./carousel.js"></script>
     <script src="./icons.js"></script>
     <script src="./address.js"></script>
+    <script src="./mask.js"></script>
     <script src="./main.js"></script>
    
 </body>

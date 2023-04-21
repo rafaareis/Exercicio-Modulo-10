@@ -11,6 +11,7 @@
     --facebook: #4267b3;
     --whatsapp: #25d366;
     --youtube: #c4302b;
+    --error: red;
 
 }
 
@@ -108,6 +109,13 @@ nav li a:hover {
 .menu-hamburger {
     width: 32px;
     cursor: pointer;
+    display: block;
+}
+
+.menu-closed {
+    font-size: 32px;
+    cursor: pointer;
+    display: none;
 }
 
 .menu-hamburger:hover {
@@ -430,7 +438,7 @@ button:hover{
 }
 
 form {
-    max-width: 360px;
+    max-width: 512px;
     margin-bottom: 15px;
 }
 
@@ -447,4 +455,80 @@ form {
     width: 100%;
     display: block;
     padding: 8px;
+}
+
+.error {
+    color: var(--error);
+    
+}
+
+.red.error {
+    border: 2px solid var(--error);
+}
+
+.input-interesse {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    width: 1024px;
+}
+
+.input-interesse h1 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: var(--cor2)
+
+}
+
+.escolhido {
+    background-color: var(--cor4);
+}
+
+.escolhido img {
+    max-height: 256px;
+    max-width: 256px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.escolhido h3 {
+    max-height: 60px;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    color: var(--cor2);
+    margin-bottom: 15px;
+}
+
+.escolhido h4 {
+    max-height: 60px;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.escolhido strong {
+    max-height: 60px;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+#class-message {
+    background-color:var(--cor5);
+    padding: 16px;
+    color: var(--cor6);
+    display: none;
+   
 }

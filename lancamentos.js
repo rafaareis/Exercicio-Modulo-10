@@ -72,8 +72,7 @@ let discoslanc = lancObj.map(function(disco) {
             </div>
             <button type="button">Tenho interesse</button>
             </li>
-            `
-            ;
+            `;
 });
 
 document.querySelector('.lista-discos-lanc').innerHTML = discoslanc.join("");
